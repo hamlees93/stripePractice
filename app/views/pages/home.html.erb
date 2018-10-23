@@ -16,5 +16,6 @@
           data-key="<%= Rails.application.credentials.stripe[:publishable] %>"
           data-description="A month's subscription"
           data-amount="500"
-          data-locale="auto"></script>
+          data-locale="auto"
+          data-email="<%= @user.email %>"></script>
 <% end %>
